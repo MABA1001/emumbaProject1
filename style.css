@@ -43,10 +43,12 @@ p{
 
 .row{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 80%;
     align-items: center;
     margin: auto;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 section{
@@ -220,10 +222,11 @@ color: white;
     display: flex;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 input{
-    width: 500px;
     height: 30px;
     font-size: 12px;
     padding: 10px;
@@ -231,11 +234,14 @@ input{
     border-left: 1px solid black;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    width: 80%;
  
 }
 .form-box{
     display: flex;
     align-items: center;
+    width: 90%;
+    max-width: 700px;
 }
 .form-content{
     display: flex;
@@ -243,14 +249,15 @@ input{
     justify-content: center;
     flex-direction: column;
     margin: 100px 0;
+   
 }
 .form-content button{
     height: 30px;
-    width: 70px;
     font-size: 10px;
     background-color: #2c71b8;
     color: white;
     border: none;
+    width: 20%;
  }
 
  footer{
@@ -261,10 +268,60 @@ input{
  .footer-gap{
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 60%;
     align-items: center;
     margin: auto;
     gap: 1rem;
-    width: 600px;
+    flex-wrap: wrap;
  }
  
+.bars{
+    display: none;
+   font-size: 50px;
+}
+
+
+ @media only screen and (max-width: 726px) {
+    nav ul li{
+       display: none;
+    }
+    .bars{
+        display: block;
+    }
+    .header-content {
+        margin-top: 66%;
+    }
+  }
+
+  .card1{
+    max-width: 300px;
+  }
+  .card2{
+    max-width: 300px;
+  }
+  .card3{
+    max-width: 300px;
+  }
+
+  .feature-card{
+    max-width: 300px;
+  }
+
+  .benifit-card{
+    display: flex;
+    max-width: 904px;
+    align-items: center;
+    gap :30px;
+  }
+
+  .benifit-card h1{
+   text-align: left;
+   font-size: 18px;
+  }
+  .benifit-card img{
+    height: 75px;
+    width:75px;
+  }
+  .benifit-card p{
+   margin-left: 0;
+   }
